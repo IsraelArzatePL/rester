@@ -1,0 +1,1 @@
+export { ChronometerModule } from './chronometer.module'

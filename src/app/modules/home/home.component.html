@@ -1,0 +1,7 @@
+<h1>¿Cuántos minutos descansarás?</h1>
+<section>
+    <button type="button" class="btn-minute" *ngFor="let minutes of minutesList" matRipple
+        [matRippleColor]="'rgba(0, 0, 0, 0.16)'" (click)="onSetMinutes(minutes)">
+        {{ minutes }}
+    </button>
+</section>

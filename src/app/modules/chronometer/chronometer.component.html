@@ -1,0 +1,16 @@
+<h1>
+    Tiempo de descanso:
+    <strong *ngIf="minutes > 1">{{ minutes }} minutos</strong>
+    <strong *ngIf="minutes === 1">Un minuto</strong>
+</h1>
+<section>
+    <span class="chronometer">
+        <strong>{{ seconds }}</strong>
+        <small>Segundos</small>
+    </span>
+</section>
+<footer>
+    <button type="button" mat-flat-button color="primary" [disabled]="disabled" (click)="onBack()">Volver</button>
+    <button type="button" mat-flat-button color="primary" (click)="onStartChronometer()"
+        [disabled]="disabled">Empezar</button>
+</footer>

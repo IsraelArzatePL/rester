@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+$primary: mat.define-palette(mat.$blue-palette, 500);
+$accent: mat.define-palette(mat.$grey-palette, 400);
+$warn: mat.define-palette(mat.$red-palette);
+
+$dark: mat.define-dark-theme((color: (primary: $primary,
+                accent: $accent,
+                warn: $warn )));
+
+@include mat.all-component-themes($dark);
+
+.mat-error {
+    font-weight: 900;
+}
+
+mat-form-field {
+    width: 100%;
+}
